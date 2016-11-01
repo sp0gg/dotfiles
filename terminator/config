@@ -18,6 +18,7 @@
     icon_bell = False
     font = Inconsolata Medium 12
     background_color = "#00120f"
+    scrollback_infinite = True
 [layouts]
   [[default]]
     [[[child0]]]
