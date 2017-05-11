@@ -1,0 +1,32 @@
+ip link set <int> down
+
+pacaur
+vim
+xscreensaver
+gnome-terminal
+i3
+npm
+sudo npm install -g i3-style
+i3-style mate -o ~/.config/i3/config --reload
+
+networkmanager
+- nm-applet
+xfce4-display-settings
+
+otf-hack
+otf-inconsolata-powerline-git
+vivaldi
+atom/xed
+
+python-pip
+
+docker
+systemctl start docker
+docker-compose
+
+hipchat
+
+
+function keys?
+
+launchy vs gnome-do
