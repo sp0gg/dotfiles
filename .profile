@@ -21,6 +21,6 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -f "${HOME}/.bash_aliases" ]; then
-  source "${HOME}/.bash_aliases"
+if [ -f "${HOME}/.shell_aliases" ]; then
+  source "${HOME}/.shell_aliases"
 fi
