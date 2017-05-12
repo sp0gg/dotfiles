@@ -13,3 +13,7 @@ fi
 if [ -f "${HOME}/.shell_aliases" ]; then
   source "${HOME}/.shell_aliases"
 fi
+
+if [ -f "${HOME}/.work_aliases" ]; then
+  source "${HOME}/.work_aliases"
+fi
