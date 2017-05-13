@@ -17,4 +17,4 @@ fi
 if [ -f "${HOME}/.work_aliases" ]; then
   source "${HOME}/.work_aliases"
 fi
-screenfetch -D 'Arch Linux' -t
+neofetch --color_blocks off --ascii_distro arch
