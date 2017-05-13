@@ -17,4 +17,4 @@ fi
 if [ -f "${HOME}/.work_aliases" ]; then
   source "${HOME}/.work_aliases"
 fi
-neofetch --color_blocks off --ascii ~/ascii/bitcoin
+neofetch --color_blocks off --ascii ~/ascii/$(ls ~/ascii | shuf -n1) 
