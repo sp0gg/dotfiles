@@ -21,13 +21,13 @@ white = #FFFFFF
 
 [global/wm]
 margin-top = 0
-margin-bottom = 0
+margin-bottom =0
 
 [bar/mybar]
-monitor = eDP1
+monitor = 
 
 width = 100%
-height = 18
+height = 19
 
 font-0 = Monaco:size=8:weight=bold
 font-1 = FontAwesome:size=11
@@ -35,12 +35,12 @@ font-1 = FontAwesome:size=11
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-tray-position = center
+tray-position = right 
 tray-maxsize = 16
 
 modules-left = i3 xwindow
-modules-center =
-modules-right = keyboard volume battery wireless-network wired-network calendar clock powermenu
+modules-center = bitcoin calendar clock 
+modules-right = volume battery wireless-network powermenu
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -52,11 +52,11 @@ label = %title%
 label-maxlen = 75
 
 format-foreground = ${colors.background}
-format-background = ${colors.magenta}
+format-background = ${colors.orange}
 format-prefix = " "
 format-suffix = " "
 
-format-margin = 1
+format-margin = 0
 
 [module/clock]
 type = internal/date
@@ -67,7 +67,7 @@ time = %H:%M:%S
 
 format =  <label>
 format-prefix = " "
-format-foreground = ${colors.orange}
+format-foreground = ${colors.green}
 
 label = %time%
 
@@ -76,10 +76,10 @@ type = internal/date
 
 interval = 1.0
 
-date = %d/%m/%y
+date = %m/%d/%y
 
 format = %{T1} <label>
-format-foreground = ${colors.orange}
+format-foreground = ${colors.green}
 format-prefix = " "
 
 label = %date%
@@ -136,7 +136,7 @@ menu-3-1-exec = menu-open-0
 [module/battery]
 type = internal/battery
 
-full-at = 98
+full-at = 100
 
 battery = BAT0
 adapter = AC0
@@ -183,7 +183,7 @@ wrapping-scroll = true
 
 label-focused = %index%
 label-focused-foreground = ${colors.background}
-label-focused-background = ${colors.foreground-alt}
+label-focused-background = ${colors.green}
 label-focused-padding = 1
 
 label-unfocused = %index%
@@ -214,3 +214,12 @@ label-connected-foreground = ${colors.foreground-alt}
 label-disconnected =  [not connected]
 label-disconnected-foreground = ${colors.red}
 
+[module/bitcoin]
+type = custom/script
+interval = 60
+format =  <label>
+;format-prefix = ""
+tail = true
+;format-prefix-foreground = ${colors.orange}
+format-foreground = ${colors.orange}
+exec = ~/.config/polybar/bitcoin

@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import requests
+
+r = requests.get('https://api.coinbase.com/v2/prices/BTC-USD/buy')
+ticker = r.json()
+
+price = ticker['data']['amount']
+print('$%.2f' % float(price))
