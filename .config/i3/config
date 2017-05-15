@@ -11,13 +11,14 @@
 # below: disable titlebars for gaps
 for_window [class="^.*"] border pixel 4
 gaps inner 5
-gaps outer 6
+gaps outer 5
 set $mod Mod4
 
 exec xrandr --output eDP1 --mode 1920x1080
 
 exec --no-startup-id compton
-exec_always xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -delay 0 -density 100 -speed 0.1 -no-rotate -window-id WID &
+#exec_always xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -delay 0 -density 100 -speed 0.1 -no-rotate -window-id WID &
+exec_always xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -density 70 -delay 50000 -speed 1.1 -no-rotate -window-id WID &
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
 #exec --no-startup-id compton -bc -r 3 -l -4 -t -4 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
@@ -60,7 +61,10 @@ bindsym $mod+space exec rofi -show Drun -width 15
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
-
+# Sound control
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
