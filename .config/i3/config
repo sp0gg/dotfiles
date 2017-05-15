@@ -18,7 +18,7 @@ exec xrandr --output eDP1 --mode 1920x1080
 
 exec --no-startup-id compton
 #exec_always xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -delay 0 -density 100 -speed 0.1 -no-rotate -window-id WID &
-exec_always xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -density 70 -delay 50000 -speed 1.1 -no-rotate -window-id WID &
+exec xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -density 100 -delay 50000 -speed 1.1 -no-rotate -window-id WID &
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
 #exec --no-startup-id compton -bc -r 3 -l -4 -t -4 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'

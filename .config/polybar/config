@@ -24,7 +24,8 @@ margin-top = 0
 margin-bottom =0
 
 [bar/mybar]
-monitor = 
+monitor = DP1
+monitor-fallback = eDP1
 
 width = 100%
 height = 19
