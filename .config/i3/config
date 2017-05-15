@@ -65,6 +65,8 @@ bindsym $mod+space exec rofi -show Drun -width 15
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+
+bindsym $mod+p exec xscreensaver-command -lock
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
