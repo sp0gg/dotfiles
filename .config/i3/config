@@ -56,7 +56,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec gnome-do
 bindsym $mod+d exec rofi -show run -width 15
 bindsym $mod+Shift+d exec --no-startup-id "rofi -show drun -run-command 'sudo {cmd}' -width 15"
-bindsym Control+space exec rofi -show Drun -width 15 
+#bindsym Control+space exec rofi -show Drun -width 15 
 bindsym $mod+space exec rofi -show Drun -width 15 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
