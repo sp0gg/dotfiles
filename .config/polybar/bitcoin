@@ -2,7 +2,7 @@
 
 import requests
 
-r = requests.get('https://api.coinbase.com/v2/prices/BTC-USD/buy')
+r = requests.get('https://api.coinbase.com/v2/prices/BTC-USD/spot')
 ticker = r.json()
 
 price = ticker['data']['amount']
