@@ -1,6 +1,8 @@
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
+export PATH=$HOME/.local/bin:$PATH
+
 #
 # User configuration sourced by interactive shells
 #
