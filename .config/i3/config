@@ -22,6 +22,7 @@ exec xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -d
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh 
 #exec --no-startup-id compton -bc -r 3 -l -4 -t -4 --shadow-exclude '_GTK_FRAME_EXTENTS@:c'
+exec --no-startup-id xfsettingsd
 exec_always --no-startup-id nm-applet
 exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id xfce4-power-manager
