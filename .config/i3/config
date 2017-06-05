@@ -120,7 +120,13 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+z focus child
+workspace 1 output DP1
+workspace 2 output DP1
+workspace 3 output eDP1
+workspace 4 output DP1
+workspace 5 output DP1
+workspace 6 output DP1
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -189,18 +195,10 @@ bindsym $mod+r mode "resize"
 #bar {
 #  position top
 #  status_command i3status
-#  colors {
-#    separator #ffffff
-#    background #3c3b37
-#    statusline #ffffff
-#    focused_workspace #526532 #526532 #ffffff
-#    active_workspace #aea79f #aea79f #3c3b37
-#    inactive_workspace #3c3b37 #3c3b37 #aea79f
-#    urgent_workspace #FF0000 #FF0000 #ffffff
-#  }
+#
 #}
 
-client.focused #526532 #526532 #ffffff #a4cb64
-client.focused_inactive #aea79f #aea79f #3c3b37 #aea79f
-client.unfocused #3c3b37 #3c3b37 #aea79f #3c3b37
-client.urgent #FF0000 #FF0000 #ffffff #FF0000
+client.focused #859900 #859900 #fdf6e3 #6c71c4
+client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
+client.unfocused #073642 #073642 #93a1a1 #586e75
+client.urgent #d33682 #d33682 #fdf6e3 #dc322f
