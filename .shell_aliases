@@ -4,4 +4,7 @@ alias ls='ls -h --color'
 alias grep='grep --color'
 alias ll='ls -l'
 alias la='ls -a'
-alias d-c='docker-compose'
+alias dc='docker-compose'
+
+export WORKON_HOME=~/envs
+source /usr/bin/virtualenvwrapper.sh
