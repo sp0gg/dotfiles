@@ -41,8 +41,8 @@ tray-position = right
 tray-maxsize = 16
 
 modules-left = i3 xwindow 
-modules-center = bitcoin calendar clock 
-modules-right = pkg filesystem cpu volume battery wireless-network powermenu
+modules-center = github pkg bitcoin calendar clock 
+modules-right = filesystem cpu volume battery wireless-network powermenu
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
@@ -78,7 +78,9 @@ type = custom/script
 interval = 1200
 format = <label>
 format-underline = #dc322f
+format-foreground = ${colors.red}
 label = "%output:0:30% "
+label-foreground = ${colors.red}
 exec = .config/polybar/pkg.sh
 exec-if = "ping -q -w 2 -c 1 176.34.135.167 > /dev/null"
 
@@ -107,12 +109,24 @@ interval = 1
 ;   <ramp-load>
 ;   <ramp-coreload>
 format = <label> <ramp-coreload>
+format-prefix = " "
+;format-foreground = ${colors.green}
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
 label = CPU %percentage%%
+label-foreground = ${colors.green}
+
+ramp-coreload-0-foreground = ${colors.blue}
+ramp-coreload-1-foreground = ${colors.blue}
+ramp-coreload-2-foreground = ${colors.green}
+ramp-coreload-3-foreground = ${colors.green}
+ramp-coreload-4-foreground = ${colors.orange}
+ramp-coreload-5-foreground = ${colors.orange}
+ramp-coreload-6-foreground = ${colors.red}
+ramp-coreload-7-foreground = ${colors.red}
 
 ramp-coreload-0 = ▁
 ramp-coreload-1 = ▂
@@ -166,7 +180,7 @@ format-mounted = <label-mounted>
 ; Default: %mountpoint% %percentage_free%%
 ;label-mounted = %mountpoint%: %percentage_free%% of %total%
 label-mounted = %mountpoint%: %percentage_free%% 
-
+label-mounted-foreground = ${colors.blue}
 ; Available tokens:
 ;   %mountpoint%
 ; Default: %mountpoint% is not mounted
@@ -312,3 +326,19 @@ tail = true
 ;format-prefix-foreground = ${colors.orange}
 format-foreground = ${colors.orange}
 exec = ~/.config/polybar/bitcoin
+
+[module/github]
+type = internal/github
+
+token = ${file:/home/joe-ant/.github_notification_token}
+empty-notifications = false
+
+format = <label>
+format-prefix = " :"
+format-suffix = " "
+format-foreground = ${colors.blue}
+
+; Available tokens:
+;   %notifications% (default)
+; Default: Notifications: %notifications%
+label = %notifications%
