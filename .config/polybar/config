@@ -41,7 +41,7 @@ tray-position = right
 tray-maxsize = 16
 
 modules-left = i3 xwindow 
-modules-center = github pkg bitcoin calendar clock 
+modules-center = github bitcoin calendar clock 
 modules-right = filesystem cpu volume battery wireless-network powermenu
 
 scroll-up = i3wm-wsnext
@@ -75,7 +75,7 @@ label = %time%
 
 [module/pkg]
 type = custom/script
-interval = 1200
+interval = 300
 format = <label>
 format-underline = #dc322f
 format-foreground = ${colors.red}
