@@ -19,4 +19,7 @@ fi
 if [ -f "${HOME}/.work_aliases" ]; then
   source "${HOME}/.work_aliases"
 fi
-neofetch --color_blocks off --ascii ~/ascii/$(ls ~/ascii | shuf -n1) 
+#neofetch --color_blocks off --ascii ~/ascii/$(ls ~/ascii | shuf -n1) 
+neofetch --color_blocks off
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
