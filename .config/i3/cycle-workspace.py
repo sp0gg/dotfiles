@@ -18,9 +18,9 @@ for i, output in enumerate(outputs):
         break
     
 # find the next workspace
-nextIndex = currentIndex + 1
+nextIndex = currentIndex - 1
 if nextIndex >= len(outputs):
-    nextIndex = 0
+    nextIndex = len(outputs) - 1
 other_workspace = outputs[nextIndex]
 
 # send current to the no-active one

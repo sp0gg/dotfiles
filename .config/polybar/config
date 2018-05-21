@@ -302,7 +302,7 @@ label-visible-padding = 1
 
 [module/wireless-network]
 type = internal/network
-interface = wlp58s0
+interface = wlp3s0
 
 format-connected-prefix = " "
 format-disconnected-prefix = " "

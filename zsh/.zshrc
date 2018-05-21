@@ -1,5 +1,6 @@
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export BROWSER=/bin/vivaldi-stable
 
 export PATH=$HOME/.local/bin:$PATH
 
