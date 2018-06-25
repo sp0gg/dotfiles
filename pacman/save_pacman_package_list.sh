@@ -1,2 +1,2 @@
 #!/bin/bash
-pacaur -Qe > pacman_backup.txt
+yay -Qe > pacman_backup.txt
