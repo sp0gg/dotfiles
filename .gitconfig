@@ -1,0 +1,4 @@
+[core]
+	excludesfile = /home/joe/.gitignore_global
+[user]
+	name = Joe Nelson
