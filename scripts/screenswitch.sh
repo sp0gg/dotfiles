@@ -1,4 +1,7 @@
 #!/bin/bash
 
-xrandr --output HDMI-1 --right-of eDP-1 --auto --primary
+xrandr --output DP1 --auto --primary
+xrandr --output DP2 --auto --right-of DP1
+#xrandr --output eDP1 --mode 1920x1080 --below DP1
+xrandr --output eDP1 --mode 1920x1080 --pos 960x1080
 i3-msg restart
