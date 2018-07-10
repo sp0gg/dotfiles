@@ -113,7 +113,7 @@ format-prefix = " "
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = CPU %{T4}%percentage:2:2%%%{T-}
+label = CPU %{T4}%percentage:3:3%%%{T-}
 label-foreground = ${colors.green}
 
 ramp-coreload-0-foreground = ${colors.blue}
