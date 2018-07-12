@@ -153,6 +153,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 bindsym $mod+m exec ~/dotfiles/scripts/screenswitch.sh
 #cycle workspace
 bindsym $mod+Shift+Tab exec ~/.config/i3/cycle-workspace.py
+#workspace back and forth
+bindsym $mod+Tab workspace back_and_forth
 
 # reload the configuration file
 ##########bindsym $mod+Shift+c reload
