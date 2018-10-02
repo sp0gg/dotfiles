@@ -154,7 +154,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 #refresh monitors
-bindsym $mod+m exec ~/dotfiles/scripts/screenswitch.sh
+bindsym $mod+m exec ~/.config/i3/screenswitch.sh
 #cycle workspace
 bindsym $mod+Shift+Tab exec ~/.config/i3/cycle-workspace.py
 #workspace back and forth
