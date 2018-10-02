@@ -42,7 +42,7 @@ tray-maxsize = 16
 
 modules-left = i3 xwindow 
 modules-center = github bitcoin calendar clock 
-modules-right = filesystem cpu volume battery wireless-network powermenu
+modules-right = topcpu cpu filesystem volume battery wireless-network 
 
 [module/xwindow]
 type = internal/xwindow
@@ -183,6 +183,7 @@ label-mounted-foreground = ${colors.blue}
 ; Default: %mountpoint% is not mounted
 label-unmounted = %mountpoint%: (N/A) 
 label-unmounted-foreground = #55
+;label-mounted-prefix = " "
 
 [module/volume]
 type = internal/volume
@@ -346,3 +347,11 @@ format-foreground = ${colors.blue}
 ;   %notifications% (default)
 ; Default: Notifications: %notifications%
 label = %notifications%
+
+[module/topcpu]
+type = custom/script
+interval = 3
+format = <label>
+exec = ps -eo pcpu,command c | sort -k1 -r -n | head -1
+format-foreground = ${colors.red}
+
