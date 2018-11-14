@@ -5,5 +5,7 @@
 	email = jnelson@onshift.com
 [format]
         pretty = format:%C(auto)%h %d%Creset %s%n%Cgreen%ad%Creset %aN <%aE>%n
-#[pull]
-	#rebase = true
+[pull]
+#	rebase = true
+[rebase]
+	autoStash = true
