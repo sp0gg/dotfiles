@@ -17,7 +17,7 @@ exec --no-startup-id xfsettingsd
 exec_always --no-startup-id nm-applet
 exec --no-startup-id xscreensaver -no-splash
 exec --no-startup-id xfce4-power-manager
-exec --no-startup-id blueman-applet
+#exec --no-startup-id blueman-applet
 exec --no-startup-id clipster -d
 
 # startup programs
@@ -30,7 +30,8 @@ exec_always --no-startup-id jetbrains-toolbox --minimize
 font pango:Inconsolata for Powerline 11
 
 #focus_on_window_activation urgent
-popup_during_fullscreen leave_fullscreen
+popup_during_fullscreen smart
+#popup_during_fullscreen leave_fullscreen
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
