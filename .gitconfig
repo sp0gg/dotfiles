@@ -9,5 +9,6 @@
 #	rebase = true
 [rebase]
 	autoStash = true
+	missingCommitsCheck = warn
 [rerere]
 	enabled = true
