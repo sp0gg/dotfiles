@@ -2,7 +2,7 @@
 	excludesfile = /home/joe/.gitignore_global
 [user]
 	name = Joe Nelson
-	email = jnelson@onshift.com
+#	email = jnelson@onshift.com
 [format]
         pretty = format:%C(auto)%h %d%Creset %s%n%Cgreen%ad%Creset %aN <%aE>%n
 [pull]
