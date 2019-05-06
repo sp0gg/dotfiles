@@ -3,6 +3,7 @@
 # cycle-workspace
 #   Moves the currently active workspace to the next active display
 #   Depends on i3-py (`pip install i3-py`)
+#   or `yay -S python-i3-py`
  
 import i3
 

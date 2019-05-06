@@ -2,3 +2,5 @@
 *joe*.yml
 Pipfile*
 *.bak
+.docker-sync/
+docker-dev/docker-compose.yml

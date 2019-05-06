@@ -23,3 +23,6 @@ fi
 if [ -f "${HOME}/.shell_aliases" ]; then
   source "${HOME}/.shell_aliases"
 fi
+
+BROWSER=/usr/bin/vivaldi-stable
+EDITOR=/usr/bin/vim
