@@ -21,6 +21,6 @@ if [ -f "${HOME}/.work_aliases" ]; then
 fi
 
 #neofetch --color_blocks off --ascii ~/ascii/$(ls ~/ascii | shuf -n1) 
-neofetch --color_blocks off
+neofetch --color_blocks off --disable gpu theme icons
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
