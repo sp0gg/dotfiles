@@ -3,6 +3,8 @@ gaps inner 5
 gaps outer 5
 set $mod Mod4
 
+exec xset -b
+
 # screen saver background
 exec_always --no-startup-id xwinwrap -b -fs -sp -fs -nf -ov  -- /usr/lib/xscreensaver/glmatrix -root -delay 0 -density 100 -speed 0.1 -no-rotate -window-id WID &
 exec_always --no-startup-id ~/.config/i3/start_background.sh
