@@ -24,3 +24,6 @@ fi
 neofetch --color_blocks off --disable gpu theme icons
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
+
+export DOCKER_LOCAL_UID=`id -u`
+export DOCKER_LOCAL_GID=`id -g`

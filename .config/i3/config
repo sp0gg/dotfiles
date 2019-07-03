@@ -84,6 +84,10 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+# disable mouse resizing
+bindsym --border button1 nop
+bindsym --whole-window $mod+button1 nop
+
 # split in horizontal orientation
 bindsym $mod+c split h
 
